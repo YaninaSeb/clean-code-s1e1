@@ -10,10 +10,10 @@
   display: block;
   text-align: right;
 }
-.header-img {
+.header__img {
   width: 100%;
 }
-.info-link {
+.header__info-link {
   font-family: fantasy, cursive;
 }
 
@@ -24,7 +24,7 @@
   }
 
 }
-.main-page {
+.main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -34,23 +34,23 @@
   display: inline-block;
   flex-grow: 1;
 }
-.add-task-wrapper {
+.add-task__content {
   display: flex;
 }
-.list-task {
+.list {
   margin: 0;
   padding: 0px;
 }
-.list-item, 
+.list__item, 
 .title {
   list-style: none;
 }
-.item-checkbox,
-.item-text,
-.btn{
+.list__item-checkbox,
+.list__item-text,
+.list__item-button{
   outline: none;
 }
-.btn {
+.list__item-button {
   background: none;
   border: 0px;
   color: #888;
@@ -59,12 +59,12 @@
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-.btn:hover {
+.list__item-button:hover {
   color: #3a3a3a;
 }
 /* Heading */
 .title ,
-.title-add-task {
+.add-task__title {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -73,7 +73,7 @@
   margin: 0;
   text-transform: uppercase;
 }
-.item-text {
+.list__item-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -85,12 +85,12 @@
   font-family: Lato, sans-serif;
   color: #888;
 }
-.item-text:focus {
+.list__item-text:focus {
   color: #333;
 }
 
 /* New Task */
-.title-add-task {
+.add-task__title {
   display: block;
   margin: 0 0 20px;
 }
@@ -99,7 +99,7 @@
 }
 
 /* Task list */
-.list-item {
+.list__item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -108,47 +108,47 @@
   justify-content: space-between;
   align-items: center;
 }
-.list-item > * {
+.list__item > * {
   vertical-align: middle;
 }
 
-.item-checkbox {
+.list__item-checkbox {
   margin: 0 10px;
 }
-.item-title {
+.list__item-title {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.list-item > .item-text {
+.list__item > .list__item-text {
   width: 226px;
 }
-.delete-img {
+.list__item-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-.delete-img:hover {
+.list__item-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks .item-title {
+#completed-tasks .list__item-title {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.list-item .item-text {
+.list__item .list__item-text {
   display: none;
 }
 
-.edit-mode .item-text {
+.edit-mode .list__item-text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode .item-title {
+.edit-mode .list__item-title {
   display: none;
 }
